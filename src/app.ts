@@ -1,3 +1,3 @@
-import { sumar } from './calculadora'
+import { lecturaArchivo } from './mantenimientos/mantenimiento_productos'
 
-console.log(sumar(1, 4))
+lecturaArchivo()

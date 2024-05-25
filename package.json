@@ -1,7 +1,7 @@
 {
     "scripts": {
         "build": "tsc",
-        "start": "node build/src/index",
+        "start": "node build/src/app",
         "dev": "nodemon"
     },
     "devDependencies": {

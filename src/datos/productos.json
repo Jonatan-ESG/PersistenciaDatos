@@ -1,0 +1,5 @@
+[
+    { "id_producto": 1, "nombre": "Pelota Basketball", "precio": 300, "stock": 10 },
+    { "id_producto": 2, "nombre": "Pelota Soccer", "precio": 150, "stock": 15 },
+    { "id_producto": 3, "nombre": "Guantes de portero", "precio": 400, "stock": 2 }
+]
