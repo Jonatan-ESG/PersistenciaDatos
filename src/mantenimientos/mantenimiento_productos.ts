@@ -1,7 +1,7 @@
 import { readFileSync } from 'fs'
 
 const lecturaArchivo = () => {
-    const archivo: string = readFileSync('./../datos/productos.json', 'utf8')
+    const archivo: string = readFileSync('./src/datos/productos.json', 'utf8')
     console.log(archivo)
 }
 
