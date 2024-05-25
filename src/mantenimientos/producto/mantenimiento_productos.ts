@@ -1,5 +1,5 @@
 import { readFileSync, writeFileSync } from 'fs'
-import { CrearProducto, Producto } from './producto.interface'
+import { ActualizarProducto, CrearProducto, Producto } from './producto.interface'
 
 const direccionArchivo = './src/datos/productos.json'
 
@@ -22,4 +22,16 @@ const eliminarProducto = (id_producto: number) => {
     writeFileSync(direccionArchivo, JSON.stringify(productosFinales))
 }
 
-export { lecturaProductos, crearProducto, eliminarProducto }
+const actualizarProducto = (id_producto: number, actualizarProducto: ActualizarProducto) => {
+    const productosActuales = lecturaProductos()
+    const productoAActualizar = productosActuales.filter((producto) => producto.id_producto === id_producto)[0]
+    if (actualizarProducto.nombre) productoAActualizar.nombre = actualizarProducto.nombre
+    if (actualizarProducto.precio) productoAActualizar.precio = actualizarProducto.precio
+    if (actualizarProducto.stock) productoAActualizar.stock = actualizarProducto.stock
+    eliminarProducto(id_producto)
+    const productosFinales = lecturaProductos()
+    productosFinales.push(productoAActualizar)
+    writeFileSync(direccionArchivo, JSON.stringify(productosFinales))
+}
+
+export { lecturaProductos, crearProducto, eliminarProducto, actualizarProducto }

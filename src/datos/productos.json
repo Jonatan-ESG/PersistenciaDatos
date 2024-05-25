@@ -1,5 +1,1 @@
-[
-    { "id_producto": 1, "nombre": "Pelota Basketball", "precio": 300, "stock": 10 },
-    { "id_producto": 3, "nombre": "Guantes de portero", "precio": 400, "stock": 2 },
-    { "id_producto": 4, "nombre": "Chocolate Hershey", "precio": 10, "stock": 1 }
-]
+[{"id_producto":1,"nombre":"Pelota Basketball","precio":300,"stock":10},{"id_producto":4,"nombre":"Chocolate Hershey","precio":10,"stock":1},{"id_producto":3,"nombre":"Guantes de portero","precio":200,"stock":2}]
